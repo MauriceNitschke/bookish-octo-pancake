@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Arial, Helvetica, sans-serif;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 7fr 3fr;
+  grid-template-areas: "col1 col2";
+  grid-gap: 10px;
+  color: #000;
+  
+}
+
+.eventlist {
+  margin-left: 40px;
+  grid-area: 'col1';
+  width: auto;
+ 
+}
+
+.calendar {
+  margin-right: 40px;
+  grid-area: 'col2';
+  width: auto;
+  
+}
+
+
+/* Event Button Styling*/
+.eventButton {
+  margin-top: 60px;
+  padding: 9px 45px;
+  background-color: rgb(46, 224, 61);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3 ease 0s;
+  width: auto;
+}
+
+.eventButton:hover {
+  background-color: rgba(88, 231, 100, 0.8);
+}
